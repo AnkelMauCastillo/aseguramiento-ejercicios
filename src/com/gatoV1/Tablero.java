@@ -30,12 +30,12 @@ public class Tablero {
         this.posiciones = posiciones;
     }
 
-    public void asignarCaracter (int numeroPosición, char caracter){
-        switch (numeroPosición) {
+    public void asignarCaracter (int numeropos, char caracter){
+        switch (numeropos) {
             case 1:
                 if(posiciones [0][0] == 'X' || posiciones[0][0] == 'O'){
 
-                    casillaOcupada(numeroPosición,caracter);
+                    casillaOcupada(numeropos,caracter);
                 }else {
                     posiciones [0][0] = caracter;
                     setPosiciones(posiciones);
@@ -45,7 +45,7 @@ public class Tablero {
             case 2:
                 if (posiciones [0][1] == 'X' || posiciones [0][1] == 'O'){
 
-                    casillaOcupada(numeroPosición,caracter);
+                    casillaOcupada(numeropos,caracter);
                 }else {
                     posiciones [0][1] = caracter;
                     setPosiciones(posiciones);
@@ -54,7 +54,7 @@ public class Tablero {
                 break;
             case 3:
                 if (posiciones [0][2] == 'X' || posiciones [0][2] == 'O'){
-                    casillaOcupada(numeroPosición,caracter);
+                    casillaOcupada(numeropos,caracter);
                 }else {
                     posiciones [0][2] = caracter;
                     setPosiciones(posiciones);
@@ -63,7 +63,7 @@ public class Tablero {
                 break;
             case 4:
                 if (posiciones [1][0] == 'X' || posiciones [1][0] == 'O'){
-                    casillaOcupada(numeroPosición,caracter);
+                    casillaOcupada(numeropos,caracter);
                 }else {
                     posiciones [1][0] = caracter;
                     setPosiciones(posiciones);
@@ -72,7 +72,7 @@ public class Tablero {
                 break;
             case 5:
                 if (posiciones [1][1] == 'X' || posiciones [1][1] == 'O'){
-                    casillaOcupada(numeroPosición,caracter);
+                    casillaOcupada(numeropos,caracter);
                 }else {
                     posiciones [1][1] = caracter;
                     setPosiciones(posiciones);
@@ -81,7 +81,7 @@ public class Tablero {
                 break;
             case 6:
                 if (posiciones [1][2] == 'X' || posiciones [1][2] == 'O'){
-                    casillaOcupada(numeroPosición,caracter);
+                    casillaOcupada(numeropos,caracter);
                 }else {
                     posiciones [1][2] = caracter;
                     setPosiciones(posiciones);
@@ -90,7 +90,7 @@ public class Tablero {
                 break;
             case 7:
                 if (posiciones [2][0] == 'X' || posiciones [2][0] == 'O'){
-                    casillaOcupada(numeroPosición,caracter);
+                    casillaOcupada(numeropos,caracter);
                 }else {
                     posiciones [2][0] = caracter;
                     setPosiciones(posiciones);
@@ -99,7 +99,7 @@ public class Tablero {
                 break;
             case 8:
                 if (posiciones [2][1] == 'X' || posiciones [2][1] == 'O'){
-                    casillaOcupada(numeroPosición,caracter);
+                    casillaOcupada(numeropos,caracter);
                 }else {
                     posiciones [2][1] = caracter;
                     setPosiciones(posiciones);
@@ -108,7 +108,7 @@ public class Tablero {
                 break;
             case 9:
                 if (posiciones [2][2] == 'X' || posiciones [2][2] == 'O'){
-                    casillaOcupada(numeroPosición,caracter);
+                    casillaOcupada(numeropos,caracter);
                 }else {
                     posiciones [2][2] = caracter;
                     setPosiciones(posiciones);
@@ -188,11 +188,11 @@ public class Tablero {
         return '0';
     }
 
-    public void casillaOcupada(int numeroPosición, char caracter){
+    public void casillaOcupada(int numeroopos, char caracter){
         System.out.println("Casilla Ocupada");
         System.out.println("Ingrese de nuevo la posicion de una casilla libre");
-        numeroPosición = entrada.nextInt();
-        asignarCaracter(numeroPosición,caracter);
+        numeroopos = entrada.nextInt();
+        asignarCaracter(numeroopos,caracter);
     }
 
 
