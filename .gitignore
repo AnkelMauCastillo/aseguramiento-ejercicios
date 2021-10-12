@@ -34,3 +34,9 @@ HELP.md
 README.md
 settings.gradle
 .project
+.idea/
+out/
+GatoV1.eml
+GatoV1.iml
+GatoV1.userlibraries
+
